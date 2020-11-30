@@ -1,0 +1,116 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prince George Budget Data Overview</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/d3@6.2.0/dist/d3.min.js"></script>
+</head>
+<body>
+  <section class="hero has-background-link-dark">
+    <div class="hero-body">
+      <p class="title has-text-white">
+        Prince George County Budget Data Overview
+      </p>
+      <p class="subtitle has-text-white">
+        A closer look at the spending in PGC
+      </p>
+    </div>
+  </section>
+
+    <div class='block'>
+      <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="https://data.princegeorgescountymd.gov/">
+            <img src="https://data.princegeorgescountymd.gov/api/assets/68A289A4-F198-4DF4-91E1-A651C157C7AC">
+          </a>
+      
+          <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+      
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-start">
+            <a class="navbar-item">
+              Home
+            </a>
+      
+            <a class="navbar-item">
+              About us
+            </a>
+
+            <a class="navbar-item">
+              Data
+            </a>
+
+            <a class="navbar-item">
+              Code
+            </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="wrapper">
+
+    <div class="block">
+
+      <div class="columns">
+
+        <div class="column">
+
+          <div class="box">
+            <h1>Filters</h1>
+            <label class="checkbox">
+              <input type="checkbox">
+              2016
+            </label>
+            <label class="checkbox">
+              <input type="checkbox">
+              2017
+            </label>
+            <label class="checkbox">
+              <input type="checkbox">
+              2018
+            </label>
+            <br>
+            <label class="checkbox">
+              <input type="checkbox">
+              2019
+            </label>
+            <label class="checkbox">
+              <input type="checkbox">
+              2020
+            </label>
+            <label class="checkbox">
+              <input type="checkbox">
+              2021
+            </label>
+          </div>
+        </div>
+
+
+        <div class="column is-three-quarters" id='chartContainer'></div>
+        
+      </div>
+
+
+    </div>
+
+
+
+    </div> //Wrapper end//
+
+    <script src="canvasjs.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
