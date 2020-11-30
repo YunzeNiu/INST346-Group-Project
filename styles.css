@@ -1,0 +1,14 @@
+body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: left;
+    background-color: rgb(250, 253, 252);
+    padding: 0;
+    font-family: 'Baloo 2', cursive;
+    margin-left: 7%;
+   }
+
+h1 {
+    color: rgb(18, 66, 128);
+   }
