@@ -36,7 +36,7 @@ function makeYourOptionsObject(datapointsFromRestaurantsList) {
     axisY2: {
       interlacedColor: 'rgba(1,77,101,.2)',
       gridColor: 'rgba(1,77,101,.1)',
-      title: 'Spendingby Companies',
+      title: 'Amount in Dollars',
       labelFontSize: 12,
     },
     data: [{
@@ -59,8 +59,11 @@ async function getData(){
       const amount = row.Amount;
     })
     const hope = buildAxis(dataParse);
-    console.log(hope);
-    const options = makeYourOptionsObject(hope);
+    hope.sort(function(a, b){return b.y-a.y});
+    hope.slice(0,20);
+    const hopeToo = hope.slice(0,10)
+    console.log(hopeToo);
+    const options = makeYourOptionsObject(hopeToo);
     const chart = new CanvasJS.Chart('chartContainer', options);
     chart.render();
 }
