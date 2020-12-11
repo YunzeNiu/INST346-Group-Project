@@ -56,6 +56,7 @@ async function getData(){
       const rawData = await fetch('FY_'+year+'.csv');
       var text = await rawData.text();
       var lines = text.split('\n');
+      lines.splice(0,1)[0];
       text = lines.join('\n');
 
       if (e.target.checked) {
