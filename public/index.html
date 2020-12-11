@@ -67,40 +67,24 @@
       <div class="columns">
 
         <div class="column">
-
-          <div class="box">
-            <h1>Filters</h1>
-            <label class="checkbox">
-              <input type="checkbox">
-              2016
-            </label>
-            <label class="checkbox">
-              <input type="checkbox">
-              2017
-            </label>
-            <label class="checkbox">
-              <input type="checkbox">
-              2018
-            </label>
-            <br>
-            <label class="checkbox">
-              <input type="checkbox">
-              2019
-            </label>
-            <label class="checkbox">
-              <input type="checkbox">
-              2020
-            </label>
-            <label class="checkbox">
-              <input type="checkbox">
-              2021
-            </label>
-          </div>
+          <form method="post" action="/api">
+            <ul class = "flex-outer">            
+              <li>
+                  <button onclick="testFunction()" class = "button" id = "active" name = "submit" type = "button">2020</button>
+              </li>
+              <li>
+                <button onclick="testFunction()" class = "button" id = "active" name = "submit" type = "button">2019</button>
+              </li>
+              <li>
+              <button onclick="testFunction()" class = "button" id = "active" name = "submit" type = "button">2018</button>
+              </li>
+              <li>
+            <button onclick="testFunction()" class = "button" id = "active" name = "submit" type = "button">2017</button>
+              </li>
+            </ul>
+        </form>
         </div>
-
-
         <div class="column is-three-quarters" id='chartContainer'></div>
-        
       </div>
 
 

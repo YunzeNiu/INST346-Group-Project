@@ -48,6 +48,20 @@ function makeYourOptionsObject(datapointsFromRestaurantsList) {
   };
 }
 
+function testFunction() {
+  fetch('/api')
+  .then((response) => response.text())
+  .then((response) => {
+       console.log(response);
+       const elements = document.querySelectorAll('.flex-outer li label')
+        elements.forEach((el,i) => {
+            const text = el.innerText;
+            console.log(text);
+            el.innerText = fruitArray[i];
+        })
+
+      })
+  }
 
 async function getData(){
     const rawData = await fetch('FY_2019.csv');
