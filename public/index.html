@@ -64,33 +64,34 @@
 
     <div class="block">
 
-      <div class="columns">
+          <div class="box">
+            <h1>Filters</h1>
+            <label class="checkbox">
+              <input type="checkbox" id = "2016">
+              2016
+            </label>
+            <label class="checkbox">
+              <input type="checkbox" id = "2017">
+              2017
+            </label>
+            <label class="checkbox">
+              <input type="checkbox" id = "2018">
+              2018
+            </label>
+            <br>
+            <label class="checkbox">
+              <input type="checkbox" id = "2019">
+              2019
+            </label>
+            <label class="checkbox">
+              <input type="checkbox" id = "2020">
+              2020
+            </label>
+          </div>
 
-        <div class="column">
-          <form method="post" action="/api">
-            <ul class = "flex-outer">            
-              <li>
-                  <button onclick="testFunction()" class = "button" id = "active" name = "submit" type = "button">2020</button>
-              </li>
-              <li>
-                <button onclick="testFunction()" class = "button" id = "active" name = "submit" type = "button">2019</button>
-              </li>
-              <li>
-              <button onclick="testFunction()" class = "button" id = "active" name = "submit" type = "button">2018</button>
-              </li>
-              <li>
-            <button onclick="testFunction()" class = "button" id = "active" name = "submit" type = "button">2017</button>
-              </li>
-            </ul>
-        </form>
-        </div>
-        <div class="column is-three-quarters" id='chartContainer'></div>
-      </div>
-
-
+        <div class="block" id='chartContainer'></div>
+        
     </div>
-
-
 
     </div> //Wrapper end//
 
@@ -98,3 +99,4 @@
     <script src="script.js"></script>
   </body>
 </html>
+
