@@ -56,7 +56,6 @@ async function getData(){
       const rawData = await fetch('FY_'+year+'.csv');
       var text = await rawData.text();
       var lines = text.split('\n');
-      const first_line = lines.splice(0,1)[0];
       text = lines.join('\n');
 
       if (e.target.checked) {
@@ -65,9 +64,7 @@ async function getData(){
       else {
         texts = texts.replace(text, '');
       }
-      // texts = (first_line + '\n').concat(texts);
       console.log(texts)
-
       const dataParse = d3.csvParse(texts);
       dataParse.forEach(row => {
         const vendor = row["Payee Name"];
